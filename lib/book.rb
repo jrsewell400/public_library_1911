@@ -1,6 +1,7 @@
 class Book
 
   attr_reader :author_first_name, :author_last_name, :title, :publication_date
+
   def initialize(book_info)
     @author_first_name = book_info[:author_first_name]
     @author_last_name = book_info[:author_last_name]
@@ -15,5 +16,4 @@ class Book
   def publication_year
     @publication_date[-4..-1]
   end
-
 end
